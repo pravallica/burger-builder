@@ -4,8 +4,8 @@ const BurgerControl = (props) => {
     return (
         <div className={classes.BurgerControl}>
             <div className={classes.Label}>{props.label}</div>
-            <button className={classes.Add}>Add</button>
-            <button className={classes.Remove}>Remove</button>
+            <button onClick = {props.added} className={classes.Add}>Add</button>
+            <button onClick = {props.removed} className={classes.Remove}>Remove</button>
         </div>
     );
 }

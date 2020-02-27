@@ -8,3 +8,26 @@
     margin:auto;
     padding: 10px 0;
 }
+
+.BurgerControls p{
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+}
+
+.BurgerControls button{
+    font-size:15px;
+    padding: 10px;
+    margin:10px;
+    background-color: azure;
+    color:rgb(223, 109, 68);
+    border: 1px solid rgb(221, 230, 230);
+    border-radius: 5px;
+    cursor:pointer;
+    outline:none;
+}
+
+.BurgerControls button:hover{
+    background-color: rgb(223, 109, 68);
+    color:azure;
+}

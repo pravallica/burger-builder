@@ -9,14 +9,20 @@ const controls = [
     {label: 'Bacon', type: 'bacon'}
 ]
 
-const BurgerControls = ()=> {
+const BurgerControls = (props)=> {
     return (
         <div className={classes.BurgerControls}>
+            <p>Your burger price is: {props.price.toFixed(2)}</p>
             {controls.map(ele =>{
-                return <BurgerControl label={ele.label} key={ele.label}/> })}
+                return <BurgerControl 
+                label={ele.label} 
+                key={ele.label}
+                added ={props.add.bind(this,ele.type)}
+                removed = {() => props.remove(ele.type) }/> })}
             {/* <BurgerControl label="Veggies"/>
             <BurgerControl label="Veggies"/>
             <BurgerControl label="Veggies"/> */}
+            <button> ORDER NOW </button>
         </div>
     )
 }
